@@ -1,4 +1,4 @@
-== Shoe Sale
+# Shoe Sale
 
 This application is a marketplace to be able to buy and sell shoes.
 
