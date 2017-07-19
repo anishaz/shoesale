@@ -1,10 +1,14 @@
 .register {
-  width: 750px;
+  width: 600px;
+  display: inline-block;
+}
+
+fieldset {
   display: inline-block;
 }
 
 .login {
-  width: 750px;
+  width: 600px;
   display: inline-block;
   vertical-align: top;
 }

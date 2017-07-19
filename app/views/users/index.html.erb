@@ -1,8 +1,8 @@
 <br>
-<%= link_to "Go to All Products", shoes_path %>
-<h1>Hi <%= current_user.first_name %>!</h1>
+<%= link_to "Home", shoes_path %>
+<h1><%= current_user.first_name %>'s User Dashboard</h1>
 
-<form action="/products" method="POST" class="login">
+<form action="/products" method="POST" class="product-form">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <fieldset>
     <legend>Sell Product</legend>
@@ -15,7 +15,7 @@
 </form>
 
 
-<h3>Your products that are not yet sold:</h3>
+<h3>Your shoes that are not yet sold:</h3>
 <table>
   <thead>
     <th>Product</th>
@@ -41,7 +41,7 @@
   </tbody>
 </table>
 
-<h3>Sales:</h3>
+<h3>Shoe Sales:</h3>
 <table>
   <thead>
     <th>Product</th>
@@ -62,9 +62,9 @@
     <% end %>
   </tbody>
 </table>
-<h5>Total Earned: $<%= @sales_total %></h5>
+<h5 class="total">Total Earned: $<%= @sales_total %></h5>
 
-<h3>Purchases:</h3>
+<h3>Your Purchases:</h3>
 <table>
   <thead>
     <th>Product</th>
@@ -85,4 +85,4 @@
     <% end %>
   </tbody>
 </table>
-<h5>Total Spent: $<%= @purchase_total %></h5>
+<h5 class="total">Total Spent: $<%= @purchase_total %></h5>
