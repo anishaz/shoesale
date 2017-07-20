@@ -1,4 +1,4 @@
-# Shoe Sale
+# Shoe Sale [DEMO](http://34.208.56.153/)
 
 This application is a marketplace to be able to buy and sell shoes.
 
